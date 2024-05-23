@@ -1,17 +1,21 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
 const jobRoutes = require("./routes/jobs")
 
-const PORT = 9000;
+const PORT = 10000;
 
 const app = express();
 
+dotenv.config();
+
 // JSON Middleware
 app.use(express.json());
+// console.log("URL:-", process.env.DB_CONNECTION_URL);
 
 // Connection of MongoDB
-mongoose.connect("mongodb://localhost:27017/jobapp")
+mongoose.connect(process.env.DB_CONNECTION_URL)
 .then(() => 
     console.log("Connection with Database Eastablished Successfully")
 )
