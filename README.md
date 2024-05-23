@@ -83,7 +83,29 @@ Start the application using the following command:
 ```sh
 npm start
 ```
-The server will be running at `http://localhost:9000.`
+The server will be running at `http://localhost:10000.`
+
+## All the 4 Api Link (Render-Deployement)
+1. `POST`
+```bash
+https://job-posting-application-1c1o.onrender.com/api/jobs
+```
+
+2. `GET`
+```bash
+https://job-posting-application-1c1o.onrender.com/api/jobs?minSalary=40000&maxSalary=100000
+```
+
+3. `PUT`
+```bash
+https://job-posting-application-1c1o.onrender.com/api/jobs/664ef1935402a50bd3794c17
+```
+
+4. `DELETE`
+```bash
+https://job-posting-application-1c1o.onrender.com/api/jobs/664ef1935402a50bd3794c17
+```
+
 
 ## API Endpoints
 
